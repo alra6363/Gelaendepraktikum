@@ -1,0 +1,154 @@
+body{
+    background: #f9ecec;
+}
+
+h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}  
+h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px;
+}
+h3{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 28px,;
+}
+h4{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 19px;
+}
+
+.navbar {
+display: flex;
+justify-content: center;
+overflow: hidden;
+font-family: 'Quicksand', sans-serif;
+font-size: 33px;
+}
+
+.navbar a {
+display: block;
+color: black;
+text-align: center;
+padding: 10px 16px;
+text-decoration: none;
+}
+
+.navbar a:hover {
+background-color: #ca9b91;
+color: black;
+}
+
+.placeholder {
+    font-weight: bold;
+    opacity: 0.5;
+    color: #ac3939;
+}
+
+.scroll-button {
+background-color: #ac3939;
+color: white;
+padding: 8px 8px;
+border: none;
+cursor: pointer;
+border-radius: 7px;
+font-family: 'Quicksand', sans-serif;
+font-size: 17px;
+text-decoration: none;
+transition: all 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.scroll-button:hover {
+background-color: #BDA29C;
+transform: translateY(-10px);
+background-color: #ca9b91;
+color: white;
+}
+
+.flex-container {
+display: flex;
+}
+
+ul { 
+    list-style: none 
+}
+
+.flex-item {
+flex: 1;
+border: none;
+padding: 50px;
+margin: 50px;
+}
+
+.wrapper{
+    display: inline-flex;
+    align-items: center;
+}
+
+.wrapper .static-txt{
+    font-family: 'Quicksand', sans-serif;
+    color: #ca9b91; 
+    font-size: 40px;
+    text-align: center;
+}
+
+.wrapper .dynamic-txt{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.dynamic-txt li{
+    font-family: 'Quicksand', sans-serif;
+    color:#ac3939;
+    font-size: 40px;
+    animation: typing 2.5s steps(100) infinite;
+}
+
+.dynamic-txt li span{
+    position: relative;
+}
+
+.dynamic-txt li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100% ;
+    background: #f9ecec;
+    border-left: 2px solid #ac3939;
+    animation: typing 2.5s steps(10) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+.fieldset {
+    background-color: #f9ecec;
+  }
+  
+.legend {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: black;
+    padding: 5px 10px;
+}
+  
+.input {
+    margin: 5px;
+}
+
+.label {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-starly;
+  }
+
+.map {
+    height: 400px;
+    font-family: "HelveticaNeue", "Helvetica";
+  }
